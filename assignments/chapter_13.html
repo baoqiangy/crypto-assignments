@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 13 Programming Exercise</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<header><div class="wrap">
+<h1>Chapter 13: Message Authentication Codes (MACs)</h1>
+<p>HMAC-SHA256 Message Authentication</p>
+<span class="badge">Moderate</span>
+</div></header>
+<main>
+<nav><a href="../index.html">Index</a><a href="chapter_11.html">Previous Exercise</a><a href="chapter_14.html">Next Exercise</a></nav>
+<div class="card note"><strong>Why this exercise fits:</strong> Chapter 13 directly covers HMAC and message authentication.</div>
+<div class="card"><h2>Learning Objectives</h2><ul><li>Generate an HMAC with a shared secret.</li><li>Verify a received HMAC.</li><li>Observe verification failure after message modification.</li></ul></div>
+<div class="card"><h2>Programming Assignment</h2><p>Using OpenSSL, compute HMAC-SHA256 for a message and shared secret. Recompute it for verification, then alter the message and show that the tag changes.</p></div>
+<div class="card"><h2>Requirements</h2><ul><li>Use HMAC-SHA256 through OpenSSL.</li><li>Read a secret key and message.</li><li>Print the HMAC in hexadecimal.</li><li>Verify the original message.</li><li>Modify one character and demonstrate that verification fails.</li></ul></div>
+<div class="card"><h2>Example / Guidance</h2><pre>Compile with: g++ -std=c++17 chapter13_hmac.cpp -lcrypto</pre></div>
+<div class="card"><h2>Grading</h2>
+<table><tr><th>Criterion</th><th>Points</th></tr>
+<tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
+<tr><td>Correct input, output, and validation</td><td>20</td></tr>
+<tr><td>Code organization and readability</td><td>15</td></tr>
+<tr><td>Testing / explanation</td><td>15</td></tr></table>
+</div>
+</main><footer>Cryptography and System Security • Chapter 13 Programming Exercise</footer>
+</body></html>

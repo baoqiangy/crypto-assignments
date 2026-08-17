@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 9 Programming Exercise</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<header><div class="wrap">
+<h1>Chapter 9: Elliptic Curve Cryptosystems</h1>
+<p>Elliptic-Curve Point Addition over a Prime Field</p>
+<span class="badge">Moderate</span>
+</div></header>
+<main>
+<nav><a href="../index.html">Index</a><a href="chapter_08.html">Previous Exercise</a><a href="chapter_10.html">Next Exercise</a></nav>
+<div class="card note"><strong>Why this exercise fits:</strong> Chapter 9 centers on elliptic-curve group operations before ECDH.</div>
+<div class="card"><h2>Learning Objectives</h2><ul><li>Represent points over GF(p).</li><li>Implement point addition and doubling.</li><li>Compute small scalar multiples kP.</li></ul></div>
+<div class="card"><h2>Programming Assignment</h2><p>For the curve y^2 = x^3 + ax + b mod p, implement point addition, point doubling, and scalar multiplication using double-and-add. Use small educational parameters only.</p></div>
+<div class="card"><h2>Requirements</h2><ul><li>Represent the point at infinity.</li><li>Implement modular inverse.</li><li>Handle P+Q, P+P, and P+(-P).</li><li>Compute kP for a user-supplied k.</li><li>Use small prime-field parameters supplied by the instructor.</li></ul></div>
+<div class="card"><h2>Example / Guidance</h2><pre>Curve: y^2=x^3+2x+2 mod 17, P=(5,1), k=2\n2P=(6,3)</pre></div>
+<div class="card"><h2>Grading</h2>
+<table><tr><th>Criterion</th><th>Points</th></tr>
+<tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
+<tr><td>Correct input, output, and validation</td><td>20</td></tr>
+<tr><td>Code organization and readability</td><td>15</td></tr>
+<tr><td>Testing / explanation</td><td>15</td></tr></table>
+</div>
+</main><footer>Cryptography and System Security • Chapter 9 Programming Exercise</footer>
+</body></html>

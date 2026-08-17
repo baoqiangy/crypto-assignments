@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 6 Programming Exercise</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<header><div class="wrap">
+<h1>Chapter 6: Introduction to Public-Key Cryptography</h1>
+<p>Public-Key Number Theory Toolkit</p>
+<span class="badge">Basic–Moderate</span>
+</div></header>
+<main>
+<nav><a href="../index.html">Index</a><a href="chapter_05.html">Previous Exercise</a><a href="chapter_07.html">Next Exercise</a></nav>
+<div class="card note"><strong>Why this exercise fits:</strong> Chapter 6 specifically develops Euclid, Extended Euclid, Euler&#x27;s phi function, and Euler/Fermat relationships.</div>
+<div class="card"><h2>Learning Objectives</h2><ul><li>Compute gcd values.</li><li>Find modular inverses.</li><li>Compute phi(n) for small n.</li><li>Verify Euler&#x27;s theorem experimentally.</li></ul></div>
+<div class="card"><h2>Programming Assignment</h2><p>Build a small number-theory toolkit with functions for gcd, extended gcd, modular inverse, phi(n), and modular exponentiation. Use it to test whether a^phi(n) mod n equals 1 when gcd(a,n)=1.</p></div>
+<div class="card"><h2>Requirements</h2><ul><li>Implement all five functions yourself except basic I/O.</li><li>Read a and n.</li><li>Report gcd(a,n), phi(n), and the modular inverse when it exists.</li><li>Verify Euler&#x27;s theorem when applicable.</li></ul></div>
+<div class="card"><h2>Example / Guidance</h2><pre>a=7, n=26\ngcd=1\nphi=12\ninverse=15\n7^12 mod 26 = 1</pre></div>
+<div class="card"><h2>Grading</h2>
+<table><tr><th>Criterion</th><th>Points</th></tr>
+<tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
+<tr><td>Correct input, output, and validation</td><td>20</td></tr>
+<tr><td>Code organization and readability</td><td>15</td></tr>
+<tr><td>Testing / explanation</td><td>15</td></tr></table>
+</div>
+</main><footer>Cryptography and System Security • Chapter 6 Programming Exercise</footer>
+</body></html>

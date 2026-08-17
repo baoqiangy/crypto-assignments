@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 14 Programming Exercise</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<header><div class="wrap">
+<h1>Chapter 14: Key Management</h1>
+<p>Password-Based Key Derivation with PBKDF2</p>
+<span class="badge">Moderate</span>
+</div></header>
+<main>
+<nav><a href="../index.html">Index</a><a href="chapter_13.html">Previous Exercise</a></nav>
+<div class="card note"><strong>Why this exercise fits:</strong> Chapter 14 begins with key derivation and practical key-management concerns.</div>
+<div class="card"><h2>Learning Objectives</h2><ul><li>Derive a key from a password and salt.</li><li>Understand iteration count and salt roles.</li><li>Compare derived keys when the salt changes.</li></ul></div>
+<div class="card"><h2>Programming Assignment</h2><p>Using OpenSSL PBKDF2-HMAC-SHA256, derive a 256-bit key from a password, salt, and iteration count. Derive again with a different salt and compare the outputs.</p></div>
+<div class="card"><h2>Requirements</h2><ul><li>Read a password and salt.</li><li>Use PBKDF2-HMAC-SHA256.</li><li>Use an instructor-specified iteration count of at least 100000 for the exercise.</li><li>Derive 32 bytes.</li><li>Print derived keys in hexadecimal and show that changing the salt changes the result.</li></ul></div>
+<div class="card"><h2>Example / Guidance</h2><pre>Compile with: g++ -std=c++17 chapter14_pbkdf2.cpp -lcrypto</pre></div>
+<div class="card"><h2>Grading</h2>
+<table><tr><th>Criterion</th><th>Points</th></tr>
+<tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
+<tr><td>Correct input, output, and validation</td><td>20</td></tr>
+<tr><td>Code organization and readability</td><td>15</td></tr>
+<tr><td>Testing / explanation</td><td>15</td></tr></table>
+</div>
+</main><footer>Cryptography and System Security • Chapter 14 Programming Exercise</footer>
+</body></html>

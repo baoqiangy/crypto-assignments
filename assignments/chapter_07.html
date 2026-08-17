@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 7 Programming Exercise</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<header><div class="wrap">
+<h1>Chapter 7: The RSA Cryptosystem</h1>
+<p>Small-Integer RSA</p>
+<span class="badge">Moderate</span>
+</div></header>
+<main>
+<nav><a href="../index.html">Index</a><a href="chapter_06.html">Previous Exercise</a><a href="chapter_08.html">Next Exercise</a></nav>
+<div class="card note"><strong>Why this exercise fits:</strong> Chapter 7 is ideal for a complete educational RSA implementation with small integers.</div>
+<div class="card"><h2>Learning Objectives</h2><ul><li>Generate RSA parameters from p and q.</li><li>Compute d as a modular inverse.</li><li>Encrypt and decrypt with fast modular exponentiation.</li></ul></div>
+<div class="card"><h2>Programming Assignment</h2><p>Implement RSA for small prime inputs p and q. Compute n, phi(n), validate e, compute d, encrypt an integer message m, and decrypt it.</p></div>
+<div class="card"><h2>Requirements</h2><ul><li>Read p, q, e, and m.</li><li>Require gcd(e,phi(n))=1 and 0&lt;=m&lt;n.</li><li>Use fast modular exponentiation.</li><li>Compute d with the Extended Euclidean Algorithm.</li><li>Print n, phi(n), d, ciphertext, and recovered plaintext.</li></ul></div>
+<div class="card"><h2>Example / Guidance</h2><pre>p=61, q=53, e=17, m=65\nn=3233, phi=3120, d=2753\nciphertext=2790\nrecovered=65</pre></div>
+<div class="card"><h2>Grading</h2>
+<table><tr><th>Criterion</th><th>Points</th></tr>
+<tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
+<tr><td>Correct input, output, and validation</td><td>20</td></tr>
+<tr><td>Code organization and readability</td><td>15</td></tr>
+<tr><td>Testing / explanation</td><td>15</td></tr></table>
+</div>
+</main><footer>Cryptography and System Security • Chapter 7 Programming Exercise</footer>
+</body></html>

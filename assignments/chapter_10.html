@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 10 Programming Exercise</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<header><div class="wrap">
+<h1>Chapter 10: Digital Signatures</h1>
+<p>RSA Digital Signature with Small Integers</p>
+<span class="badge">Moderate</span>
+</div></header>
+<main>
+<nav><a href="../index.html">Index</a><a href="chapter_09.html">Previous Exercise</a><a href="chapter_11.html">Next Exercise</a></nav>
+<div class="card note"><strong>Why this exercise fits:</strong> Chapter 10 covers RSA digital signatures and the distinction between signing and encryption.</div>
+<div class="card"><h2>Learning Objectives</h2><ul><li>Sign with a private exponent.</li><li>Verify with a public exponent.</li><li>Observe failure after message modification.</li></ul></div>
+<div class="card"><h2>Programming Assignment</h2><p>Using small educational RSA parameters, sign an integer message representative h with s=h^d mod n. Verify by computing s^e mod n. Then modify h by 1 and show that verification fails.</p></div>
+<div class="card"><h2>Requirements</h2><ul><li>Read n, e, d, and h.</li><li>Compute a signature with d.</li><li>Verify with e.</li><li>Test the signature against both h and h+1.</li><li>State in a code comment why real signatures sign a secure hash with standardized padding.</li></ul></div>
+<div class="card"><h2>Example / Guidance</h2><pre>With n=3233, e=17, d=2753, h=65, verification recovers 65.</pre></div>
+<div class="card"><h2>Grading</h2>
+<table><tr><th>Criterion</th><th>Points</th></tr>
+<tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
+<tr><td>Correct input, output, and validation</td><td>20</td></tr>
+<tr><td>Code organization and readability</td><td>15</td></tr>
+<tr><td>Testing / explanation</td><td>15</td></tr></table>
+</div>
+</main><footer>Cryptography and System Security • Chapter 10 Programming Exercise</footer>
+</body></html>
