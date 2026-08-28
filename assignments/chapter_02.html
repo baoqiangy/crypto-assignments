@@ -13,7 +13,11 @@
 <div class="card"><h2>Learning Objectives</h2><ul><li>Generate a keystream with a small LFSR.</li><li>Encrypt/decrypt bits with XOR.</li><li>Observe how known plaintext reveals keystream bits.</li></ul></div>
 <div class="card"><h2>Programming Assignment</h2><p>Implement an 8-bit LFSR using a supplied feedback rule. Generate a keystream, XOR it with an 8-bit plaintext, decrypt it, and then show that plaintext XOR ciphertext reveals the keystream.</p></div>
 <div class="card"><h2>Requirements</h2><ul><li>Use an 8-bit nonzero initial state.</li><li>Use the feedback bit b7 XOR b5 XOR b4 XOR b3.</li><li>Generate exactly 8 keystream bits.</li><li>Encrypt and decrypt using XOR.</li><li>Print the recovered keystream obtained from plaintext XOR ciphertext.</li></ul></div>
-<div class="card"><h2>Example / Guidance</h2><pre>State: 10101101\nPlaintext: 11001010\nKeystream: 10110101\nCiphertext: 01111111\nRecovered plaintext: 11001010</pre></div>
+<div class="card"><h2>Example / Guidance</h2><pre>State: 10101101
+  Plaintext: 11001010
+  Keystream: 10110101
+  Ciphertext: 01111111
+  Recovered plaintext: 11001010</pre></div>
 <div class="card"><h2>Grading</h2>
 <table><tr><th>Criterion</th><th>Points</th></tr>
 <tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
