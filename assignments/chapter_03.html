@@ -13,7 +13,11 @@
 <div class="card"><h2>Learning Objectives</h2><ul><li>Split a block into left/right halves.</li><li>Apply a round function and XOR.</li><li>Reverse one Feistel round.</li></ul></div>
 <div class="card"><h2>Programming Assignment</h2><p>Implement one educational DES-style Feistel round on a 16-bit block using two 8-bit halves. Use the supplied toy round function F(R,K)=rotl8(R,1) XOR K. Show that the round can be reversed.</p></div>
 <div class="card"><h2>Requirements</h2><ul><li>Read a 16-bit plaintext block and an 8-bit round key in hexadecimal.</li><li>Split the block into L and R.</li><li>Compute L1=R and R1=L XOR F(R,K).</li><li>Implement the inverse round and recover the original block.</li><li>Print all values in hexadecimal.</li></ul></div>
-<div class="card"><h2>Example / Guidance</h2><pre>Plaintext block: 1234\nRound key: 3A\nAfter one round: 3440\nRecovered: 1234</pre></div>
+<div class="card"><h2>Example / Guidance</h2><pre>
+  Plaintext block: 1234
+  Round key: 3A
+  After one round: 3440
+  Recovered: 1234</pre></div>
 <div class="card"><h2>Grading</h2>
 <table><tr><th>Criterion</th><th>Points</th></tr>
 <tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
