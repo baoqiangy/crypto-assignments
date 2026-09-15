@@ -13,7 +13,13 @@
 <div class="card"><h2>Learning Objectives</h2><ul><li>Observe why ECB leaks repeated-block patterns.</li><li>Implement CBC chaining.</li><li>Understand the role of an IV.</li></ul></div>
 <div class="card"><h2>Programming Assignment</h2><p>Use the supplied reversible toy 8-bit block cipher E<sub>K</sub>(x) = rotl8(x XOR k, 3). Encrypt a sequence containing repeated plaintext bytes in ECB and CBC mode and compare the ciphertext patterns.</p></div>
 <div class="card"><h2>Requirements</h2><ul><li>Use at least 8 plaintext bytes with repeated values.</li><li>Implement ECB encryption.</li><li>Implement CBC encryption with an 8-bit IV.</li><li>Print plaintext, ECB ciphertext, and CBC ciphertext.</li><li>In a short code comment, identify why repeated plaintext values behave differently.</li></ul></div>
-<div class="card"><h2>Example / Guidance</h2><pre>Plaintext contains repeated bytes such as 41 41 41 42 42 41.</pre></div>
+<div class="card"><h2>Example / Guidance</h2><pre>Plaintext contains repeated bytes such as 41 41 41 42 42 41 43 41.</pre></div>
+  Sample output:
+  <div><pre>
+Plain: 41 41 41 42 42 41 43 41
+ECB  : D8 D8 D8 C0 C0 D8 C8 D8
+CBC  : C6 EE AF BD 2D B1 45 F2
+  </pre></div>
 <div class="card"><h2>Grading</h2>
 <table><tr><th>Criterion</th><th>Points</th></tr>
 <tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
