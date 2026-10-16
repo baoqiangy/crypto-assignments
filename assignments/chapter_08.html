@@ -13,7 +13,30 @@
 <div class="card"><h2>Learning Objectives</h2><ul><li>Compute public values from private exponents.</li><li>Compute a shared secret.</li><li>Relate the exercise to the discrete logarithm problem.</li></ul></div>
 <div class="card"><h2>Programming Assignment</h2><p>Implement a small-number Diffie-Hellman exchange. Given p, g, Alice&#x27;s private value a, and Bob&#x27;s private value b, compute both public values and verify that both parties obtain the same shared secret.</p></div>
 <div class="card"><h2>Requirements</h2><ul><li>Use fast modular exponentiation.</li><li>Print A=g^a mod p and B=g^b mod p.</li><li>Compute B^a mod p and A^b mod p.</li><li>Verify that the secrets match.</li></ul></div>
-<div class="card"><h2>Example / Guidance</h2><pre>p=23, g=5, a=6, b=15\nA=8, B=19\nshared secret=2</pre></div>
+<div class="card"><h2>Example / Guidance</h2><pre>p=23, g=5, a=6, b=15<br/>A=8, B=19<br/>shared secret=2</pre>
+A few more test cases:
+
+Enter p g a b: 47 5 13 21
+A=43
+B=15
+Alice secret=44
+Bob secret=44
+Secrets match.
+
+Enter p g a b: 17 3 5 8
+A=5
+B=16
+Alice secret=16
+Bob secret=16
+Secrets match.
+
+Enter p g a b: 31 3 9 14
+A=29
+B=10
+Alice secret=16
+Bob secret=16
+Secrets match. 
+</div>
 <div class="card"><h2>Grading</h2>
 <table><tr><th>Criterion</th><th>Points</th></tr>
 <tr><td>Correct cryptographic / mathematical logic</td><td>50</td></tr>
